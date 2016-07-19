@@ -1,0 +1,476 @@
+body {
+    max-width: 1200px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+#main-container {
+    padding-bottom: 15px;
+}
+
+.navbar-brand {
+    position: absolute;
+}
+
+.nav > li a {
+    min-width: 90px;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 0 10px;
+}
+
+.nav {
+    margin: 10px;
+}
+
+.navbar .nav > li > a:hover,
+.navbar-inverse .nav > li > a:focus {
+    color: #efefef;
+    background: #353549;
+}
+
+.tim_logo {
+    max-width: 200px;
+    height: 100%;
+}
+
+.tim_logo_navbar {
+    display: block;
+}
+
+.tim_logo_header {
+    display: none;
+    padding: 10px;
+}
+
+/* Center navbar content, move logo out */
+@media (min-width: 768px) {
+    body {
+        padding: 0 15px;
+    }
+
+    .tim_logo_navbar {
+        display: none;
+    }
+
+    .tim_logo_header {
+        display: block;
+    }
+
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar .container-fluid {
+        padding: 0;
+    }
+
+    .tim_logo {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-absolute {
+        background-color: #f8f8f8;
+        position: absolute;
+        z-index: 99999;
+        border-width: 1px;
+        border-style: solid;
+        left: 14px;
+        right: 14px;
+        padding: 0px;
+    }
+}
+
+.breadcrumb > li + li::before {
+    content: ">";
+}
+
+.breadcrumb-level-0::before {
+    content: "" !important;
+}
+
+.breadcrumb-back + .breadcrumb-level-0::before {
+    padding: 0 15px;
+    content: "|" !important;
+}
+
+.breadcrumb-back::before {
+    content: "<";
+    padding: 0 5px;
+    color: #ccc;
+}
+
+#filter-button-container {
+    width: 100%;
+}
+
+#list-filter li:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+#list-filter .filter-input li:hover {
+    cursor: default;
+}
+
+@media screen and (max-width: 991px) {
+    #list-filter {
+        padding-left: 25px;
+    }
+}
+
+.categories > div {
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.categories {
+    margin-top: -20px;
+}
+
+.categories > div > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-width: 200px;
+    padding: 30px 0;
+    border: 2px solid #e7e7e7;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.categories > div > a > span {
+    margin-top: 5px;
+    display: block;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+@media (min-width: 768px) {
+    .form-fullpage {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+.form-fullpage .btn-primary {
+    margin: 0 auto;
+    display: block;
+}
+
+.filter-input input[type=number]::-webkit-outer-spin-button,
+.filter-input input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.filter-input input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.filter-input input {
+    width: 100%;
+}
+
+.device-item a {
+    display: block;
+    border: 2px solid #e7e7e7;
+    border-radius: 10px;
+    min-height: 100px;
+    text-align: center;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 250px;
+}
+
+.device-item span {
+    display: block;
+}
+
+.device-item img {
+    height: 150px;
+    /* Use space even if image is not available */
+    display: inline-block;
+}
+
+#product-description span {
+    display: block;
+}
+
+.device-item a:hover {
+    border-color: #959595;
+    text-decoration: none;
+    border-width: 2px;
+}
+
+.device-item a:hover > span,
+.device-item a > span {
+    transition: color 0.4s linear;
+}
+
+.device-item a:hover,
+.device-item a {
+    transition: border-color 0.4s linear;
+}
+
+#product-images ul {
+    display: block;
+    margin: 0 auto;
+}
+
+#prev-page.disabled > a, #next-page.disabled > a {
+    cursor: default;
+}
+
+#contact-us {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#contact-us > a > div {
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid #e7e7e7;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.news-list,
+.service-list {
+    margin-bottom: 20px;
+}
+
+.news-title a:hover,
+.service-name a:hover {
+    text-decoration: none;
+}
+
+.news-title a,
+.service-name a, {
+    color: inherit;
+    display: block;
+}
+
+.news-title,
+.service-name {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.news-content {
+    text-align: justify;
+}
+
+.news-content img {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.home-banner,
+.home-boxes {
+    vertical-align: top;
+    border: 2px solid #e7e7e7;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.home-boxes {
+    text-align: center;
+}
+
+.home-boxes a {
+    display: block;
+    outline: none;
+    text-decoration: none;
+}
+
+.home-banner {
+    background-image: url("../img/pages/home/banner.png");
+    height: 200px;
+    background-position: center center;
+    margin-bottom: 40px;
+}
+
+.home-banner > div {
+    text-align: center;
+    max-width: 300px;
+    margin: 30px;
+}
+
+.home-banner span {
+    color: white;
+}
+
+.subscribe-row {
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    max-width: 800px;
+}
+
+.subscribe-button-container {
+    text-align: right;
+    margin-top: 12px;
+}
+
+@media (max-width: 767px) {
+    .subscribe-row {
+        text-align: center;
+    }
+    .subscribe-button-container {
+        text-align: center;
+    }
+}
+
+.related-device a,
+.related-service a {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.related-device span,
+.related-service span {
+    display: block;
+}
+
+.related-device,
+.related-service {
+    text-align: center;
+    padding: 10px;
+}
+
+.related-device {
+    width: 150px; 
+}
+
+.related-service {
+    width: 200px; 
+}
+
+.related-device img,
+.related-service img {
+    height: 100px;
+}
+
+.related-device a:hover,
+.related-service a:hover {
+    border-color: #888;
+}
+
+.related-device a,
+.related-service a {
+    transition: border-color 0.2s linear;
+    padding: 5px;
+}
+
+.related-devices ul,
+.related-services ul {
+    margin-bottom: 0;
+}
+
+.related-devices,
+.related-services {
+/*     overflow-x: scroll; */
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.blank-space-30 {
+    height: 30px;
+}
+
+.assitance-service-table a {
+    display: block;
+}
+
+.thegroup-links a {
+    color: #555;
+    border: 2px solid #e7e7e7;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.thegroup-links {
+    margin-top: 30px;
+}
+
+.thegroup-links a {
+    display: block;
+}
+
+.thegroup-links a:hover {
+    background-color: #e7e7e7;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.thegroup-links li {
+    padding: 10px 10px;
+}
+
+.service-list {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-description {
+    text-align: center;
+}
+
+.service-image {
+    width: 200px;
+    float: left;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.service-image img {
+    max-height: 150px;
+}
+
+.service-description .btn {
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .service-image {
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+.list-inline-nowrap {
+    white-space: nowrap;
+}
